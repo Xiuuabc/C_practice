@@ -6,15 +6,20 @@ int main()
     int min , hour ;
     min = ceil(s / v);
     hour = ceil(min / 60);
-    if min <= 50
+// declaration
+    if hour = 1
     {
-        printf("07:%2f", 60 - min);
+        if min <= 50
+        {
+            printf("07:%2f", 60 - min);
+        }
+        else if min > 50 && min <= 60
+        {
+            printf("07:0%1f",60 - min);
+        }
     }
-    else if min > 50 && min <= 60
-    {
-        printf("07:0%1f",60 - min);
-    }
-    else if hour <= 8 && hour > 1
+// if hour = 1
+    else if hour <= 8
     {
         if min - 60 * hour >= 10
         {
@@ -24,7 +29,7 @@ int main()
     }
     else if hour > 8 && min - 60 * hour >= 10 && hour < 22
     {
-        
+
     }
 }
 
