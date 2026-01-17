@@ -7,7 +7,7 @@ int main()
     min = ceil(s / v);
     hour = ceil(min / 60);
     // declaration
-    if (hour = 1)
+    if (hour == 1)
     {
         if (min <= 50)
         {
