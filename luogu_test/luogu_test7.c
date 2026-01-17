@@ -16,11 +16,11 @@ int main()
     }
     else if hour <= 8 && hour > 1 && min - 60 * hour >= 10
     {
-        printf("0%1f:%f", 8 - hour, min - 60 * hour);
-    }
-    else if hour <= 8 && hour > 1 && min - 60 * hour < 10
-    {
-        printf("0%1f:%01f", 8 - hour, min - 60 * hour);
+        if min - 60 * hour >= 10
+        {
+            printf("0%1f:%f", 8 - hour, min - 60 * hour);
+        }
+        else printf("0%1f:%01f", 8 - hour, min - 60 * hour);
     }
     else if hour > 8 && min - 60 * hour >= 10
     {
