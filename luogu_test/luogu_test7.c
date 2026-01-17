@@ -34,6 +34,7 @@ int main()
         printf("%2f:%2f",24 - (hour - 8), min - 60 * hour);
         else printf("%2f:0%1f",24 - (hour - 8), min - 60 * hour );
     }
+    // if 8< hour <= 22
     else if (hour > 22)
     {
         if (min - 60 * hour >= 10)
@@ -42,5 +43,6 @@ int main()
         }
         else printf ("0%1f:0%1f", 24 - (hour - 8), min - 60 * hour);
     }
+    // if 22 < hour <= 24
     return 0;
 }
