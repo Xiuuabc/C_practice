@@ -24,8 +24,11 @@ int main()
     }
     else if hour > 8 && min - 60 * hour >= 10
     {
-        printf(")
+        
     }
+}
+
+
 
 
 
