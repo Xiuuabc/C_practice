@@ -6,7 +6,7 @@ int main()
     int min , hour ;
     min = ceil(s / v);
     hour = ceil(min / 60);
-    if min <= 60 && min <= 50
+    if min <= 50
     {
         printf("07:%2f", 60 - min);
     }
