@@ -14,9 +14,13 @@ int main()
     {
         printf("07:0%1f",60 - min);
     }
-    else if hour <= 8 && hour > 1 && min - (min / 60) <
+    else if hour <= 8 && hour > 1 && min - 60 * hour >= 10
     {
         printf("0%1f:%f", 8 - hour, 60 - min);
+    }
+    else if hour <= 8 && hour > 1 && min - 60 * hour < 10
+    {
+        printf("0%1f:%01f", 8 - hour, 60 - min)
     }
 
 
