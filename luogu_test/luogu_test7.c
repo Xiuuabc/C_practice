@@ -4,6 +4,7 @@ int main()
 {
     float s , v ;
     float min , hour ;
+    scanf("%f %f", &s , &v);
     min = ceil(s / v);
     hour = ceil(min / 60);
     // declaration
