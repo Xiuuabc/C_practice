@@ -3,7 +3,7 @@
 int main()
 {
     float s , v ;
-    int min , hour ;
+    float min , hour ;
     min = ceil(s / v);
     hour = ceil(min / 60);
     // declaration
@@ -38,9 +38,9 @@ int main()
     {
         if (min - 60 * hour >= 10)
         {
-            printf("0%1f:%2f",24 - (hour - 8), min - 60 * hour)
-            else printf ("0%1f:0%1f", 24 - (hour - 8), min - 60 * hour)
+            printf("0%1f:%2f",24 - (hour - 8), min - 60 * hour);
         }
+        else printf ("0%1f:0%1f", 24 - (hour - 8), min - 60 * hour);
     }
     return 0;
 }
