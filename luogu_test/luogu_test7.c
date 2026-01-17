@@ -22,7 +22,7 @@ int main()
     {
         printf("0%1f:%01f", 8 - hour, min - 60 * hour);
     }
-    else if hour > 8 &&
+    else if hour > 8 && min - 60
 
 
 
