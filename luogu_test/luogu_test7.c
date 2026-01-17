@@ -3,10 +3,11 @@
 int main()
 {
     float s , v ;
-    float min , hour ;
+    float min , hour , hour2;
     scanf("%f %f", &s , &v);
     min = 10 + ceil(s / v);
     hour = ceil(min / 60);
+    hour2 = floor(min/60);
     // declaration
     if (hour == 1)
     {
@@ -24,25 +25,25 @@ int main()
     {
         if (min - 60 * hour >= 10)
         {
-            printf("0%.0f:%.0f",8 - hour, min - 60 * hour);
+            printf("0%.0f:%.0f",8 - hour, min - 60 * hour2);
         }
-        else printf("0%.0f:0%.0f", 8 - hour, min - 60 * hour);
+        else printf("0%.0f:0%.0f", 8 - hour, min - 60 * hour2);
     }
     // if 1 < hour <= 8
     else if (hour <= 22)
     {
         if (min - 60 * hour >= 10)
-        printf("%.0f:%.0f",24 - (hour - 8), min - 60 * hour);
-        else printf("%.0f:0%.0f",24 - (hour - 8), min - 60 * hour );
+        printf("%.0f:%.0f",24 - (hour - 8), min - 60 * hour2);
+        else printf("%.0f:0%.0f",24 - (hour - 8), min - 60 * hour2 );
     }
     // if 8< hour <= 22
     else if (hour > 22)
     {
         if (min - 60 * hour >= 10)
         {
-            printf("0%.0f:%.0f",24 - (hour - 8), min - 60 * hour);
+            printf("0%.0f:%.0f",24 - (hour - 8), min - 60 * hour2);
         }
-        else printf ("0%.0f:0%.0f", 24 - (hour - 8), min - 60 * hour);
+        else printf ("0%.0f:0%.0f", 24 - (hour - 8), min - 60 * hour2);
     }
     // if 22 < hour <= 24
     return 0;
