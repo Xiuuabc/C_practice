@@ -12,9 +12,14 @@ int main(void)
     string t = s;
 
     // Capitalize first letter in string
-    t[0] = toupper(t[0]);
+    if (strlen(t) > 0)
+    {
+        t[0] = toupper(t[0]);
+    }
+
 
     // Print string twice
     printf("s: %s\n", s);
     printf("t: %s\n", t);
+
 }
