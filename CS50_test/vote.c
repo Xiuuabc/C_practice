@@ -86,7 +86,7 @@ void print_winner(void)
     //compare,find the max candidates.votes
     for (int i = 0;i < candidates_count;i++)
     {
-        for (int j = i + 1;i < candidates_count ;j++)
+        for (int j = 0;i < candidates_count ;j++)
             {
                 if (candidates[i].votes > candidates[j].votes)
             }
