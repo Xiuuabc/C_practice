@@ -86,13 +86,14 @@ void print_winner(void)
     //compare,find the max candidates.votes
     for (int i = 0;i < candidates_count;i++)
     {
-        if (candidates[max_votes] <= candidates[i])
+        if (candidates[max_votes].votes <= candidates[i].votes)
         {
             max_votes = i;
         }
     }
 
     //out put winner
+    printf("winner is %s", candidates[max_votes].name);
 
     return;
 }
