@@ -82,19 +82,20 @@ bool vote(string name)
 void print_winner(void)
 {
     // input candidates[i].votes
-    int max_votes[candidates_count] = 0;
+    int max_votes[candidates_count] = {0};
     //compare,find the max candidates.votes
     for (int i = 0;i < candidates_count;i++)
     {
         if (candidates[max_votes].votes <= candidates[i].votes)
         {
-            max_votes = i;
+            max_votes[k] = i;
         }
     }
 
-    for (int i = 0;i < candidates_count;i++)
+    for (int j = 0;j < candidates_count;j++)
         {
             if (candidates[max_votes] = candidates[j] )
+            max_votes[k] =
 
         }
 
