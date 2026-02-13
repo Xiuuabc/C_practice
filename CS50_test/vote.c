@@ -94,9 +94,9 @@ void print_winner(void)
 
     for (int j = 0;j < candidates_count;j++)
         {
-            if (candidates[max_votes].votes = candidates[j].votes )
+            if (candidates[max_votes].votes == candidates[j].votes )
                 {
-                    
+                    max
                 }
         }
 
