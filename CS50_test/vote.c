@@ -70,8 +70,10 @@ bool vote(string name)
     for (int i = 0;i < candidates_count;i++)
     {
         if (strcmp(name,candidates[i].name) == 0)
-        candidates
+        {
+            candidates[i].votes++;
             return true;
+        }
     }
     return false;
 }
