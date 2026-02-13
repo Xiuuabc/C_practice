@@ -92,16 +92,13 @@ void print_winner(void)
         }
     }
 
-    for (int j = 0;j < candidates_count;j++)
+    for (int j = 0; j < candidate_count; j++)
+    {
+        if (candidates[j].votes == max)
         {
-            if (candidates[max_votes].votes == candidates[j].votes )
-                {
-
-                }
+            printf("%s\n", candidates[j].name);
         }
-
-    //out put winner
-    printf("winner is %s", candidates[max_votes].name);
+    }
     return;
 }
 
