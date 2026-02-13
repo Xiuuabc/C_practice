@@ -79,14 +79,7 @@ void print_winner(void)
 {
     // TODO
     int max_candidates;
-    for (int i = 0;i < argc - 1;i++)
-    {
-        for(int j = 0;j < argc - 1;j++)
-        {
-            if (candidates[i].votes > candidates[j].votes)
-            max_candidates = candidates[i].votes
-        }
-    }
+    
     return;
 }
 
