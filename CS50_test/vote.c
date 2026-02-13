@@ -17,7 +17,7 @@ candidate;
 candidate candidates[MAX];
 
 // Number of candidates
-int candidate_count;
+int candidates_count
 
 // Function prototypes
 bool vote(string name);
@@ -71,9 +71,9 @@ bool vote(string name)
     {
         if (strcmp(name,candidates[i].name) == 0)
             return true;
-        else
-            return false;
     }
+    return false;
+
 }
 
 // Print the winner (or winners) of the election
