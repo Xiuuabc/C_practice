@@ -78,8 +78,14 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
-    if
+    for (int i = 0;i < argc - 1;i++)
+    {
+        for(int j = 0;j < argc - 1;j++)
+        {
+            if (candidates[i].votes > candidates.[j].votes)
+            
+        }
+    }
     return;
 }
-//猜想：全局变量可以在任何一个stack frame 中直接调用，任何一个stack frame中的array 可以互相直接调用
-//struct一般是全局变量
+
