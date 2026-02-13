@@ -86,7 +86,10 @@ void print_winner(void)
     //compare,find the max candidates.votes
     for (int i = 0;i < candidates_count;i++)
     {
-        
+        if (candidates[max_votes] <= candidates[i])
+        {
+            max_votes = i;
+        }
     }
 
     //out put winner
