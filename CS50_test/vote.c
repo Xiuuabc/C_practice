@@ -82,7 +82,7 @@ void print_winner(void)
     {
         for(int j = 0;j < argc - 1;j++)
         {
-            if (candidates[i].votes > candidates.[j].votes)
+            if (candidates[i].votes > candidates[j].votes)
             
         }
     }
