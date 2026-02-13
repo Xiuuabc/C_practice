@@ -92,6 +92,11 @@ void print_winner(void)
         }
     }
 
+    for (int i = 0;i < candidates_count;i++)
+        {
+            if (candidates[max_votes] = candidates[j] )
+        }
+
     //out put winner
     printf("winner is %s", candidates[max_votes].name);
     return;
