@@ -94,7 +94,6 @@ void print_winner(void)
 
     //out put winner
     printf("winner is %s", candidates[max_votes].name);
-
     return;
 }
 
