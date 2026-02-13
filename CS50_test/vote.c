@@ -96,7 +96,7 @@ void print_winner(void)
         {
             if (candidates[max_votes].votes == candidates[j].votes )
                 {
-                    max_votes[j]=
+                    
                 }
         }
 
