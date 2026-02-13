@@ -17,7 +17,7 @@ candidate;
 candidate candidates[MAX];
 
 // Number of candidates
-int candidates_count
+int candidates_count;
 
 // Function prototypes
 bool vote(string name);
@@ -33,13 +33,13 @@ int main(int argc, string argv[])
     }
 
     // Populate array of candidates
-    candidate_count = argc - 1;
-    if (candidate_count > MAX)
+    candidates_count = argc - 1;
+    if (candidates_count > MAX)
     {
         printf("Maximum number of candidates is %i\n", MAX);
         return 2;
     }
-    for (int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidates_count; i++)
     {
         candidates[i].name = argv[i + 1];
         candidates[i].votes = 0;
