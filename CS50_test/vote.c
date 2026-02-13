@@ -88,15 +88,16 @@ void print_winner(void)
     {
         if (candidates[max_votes].votes <= candidates[i].votes)
         {
-            max_votes[k] = i;
+            max_votes = i;
         }
     }
 
     for (int j = 0;j < candidates_count;j++)
         {
-            if (candidates[max_votes] = candidates[j] )
-            max_votes[k] =
-
+            if (candidates[max_votes].votes = candidates[j].votes )
+                {
+                    
+                }
         }
 
     //out put winner
